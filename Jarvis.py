@@ -91,7 +91,7 @@ if __name__ == "__main__":
         elif'thank you' in query:
             speak("You are welcome sir")
             print("You are welcome sir")
-        elif'ipl updates' in query:
+        elif'ipl' in query:
             webbrowser.open("https://www.google.com/search?source=hp&ei=PXyuX8iNLJXfz7sP_oya2AM&q=cricket&oq=cricket&gs_lcp=CgZwc3ktYWIQAzIFCAAQsQMyAggAMggILhCxAxCDATIFCAAQsQMyBQgAELEDMgIIADIFCC4QsQMyBQgAELEDMgUIABCxAzIFCAAQsQM6CAgAELEDEMkDOgIILjoICAAQsQMQgwE6CAguEMcBEKMCOggIABDqAhCPAToOCC4QsQMQxwEQowIQkwI6CggAELEDELEDEApQ_7cLWPjgC2Cy4wtoBnAAeACAAa4BiAGfC5IBBDEuMTKYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwiIoJP6wv_sAhWV73MBHX6GBjsQ4dUDCAc&uact=5")
             speak("This is the official website for Indian Premiere League")
         elif'exit' in query:
