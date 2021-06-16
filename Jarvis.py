@@ -79,7 +79,7 @@ if __name__ == "__main__":
         elif'what are you doing' in query:
             speak("I am spending time with you") 
             print("I am spending time with you")
-        elif'what is your name' in query:
+        elif'your name' in query:
             speak("My name is Jarvis sir")
             print("My name is Jarvis, sir")
         elif'who are you' in query:
@@ -104,7 +104,7 @@ if __name__ == "__main__":
         elif'goodbye' in query:
             speak("Goodbye sir, see you next time")
             exit()
-        elif'play music'in query:
+        elif'music'in query:
             webbrowser.open("https://www.youtube.com/aashiqui2/videos")
             speak("These are the music from T-Series YouTube Channel")
         elif'really' in query:
