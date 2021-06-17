@@ -3,8 +3,7 @@ import speech_recognition as sr
 import datetime
 import wikipedia
 import webbrowser
-import PyInstaller
-import os
+
 
 print("READ THIS")
 print("WHAT YOUR JARVIS CAN DO")
@@ -71,11 +70,13 @@ if __name__ == "__main__":
             speak(results)
         elif'youtube' in query:
             webbrowser.open("www.youtube.com")
+            speak("This is the official website of YouTube")
         elif'google' in query:
             webbrowser.open("www.google.com")
+            speak("This is the official website of Google.")
         elif'how are you' in query:
-            speak("I am fine")
-            print("I am fine")
+            speak("I am fine sir")
+            print("I am fine sir")
         elif'what are you doing' in query:
             speak("I am spending time with you") 
             print("I am spending time with you")
@@ -91,9 +92,9 @@ if __name__ == "__main__":
         elif'thank you' in query:
             speak("You are welcome sir")
             print("You are welcome sir")
-        elif'ipl' in query:
-            webbrowser.open("https://www.google.com/search?source=hp&ei=PXyuX8iNLJXfz7sP_oya2AM&q=cricket&oq=cricket&gs_lcp=CgZwc3ktYWIQAzIFCAAQsQMyAggAMggILhCxAxCDATIFCAAQsQMyBQgAELEDMgIIADIFCC4QsQMyBQgAELEDMgUIABCxAzIFCAAQsQM6CAgAELEDEMkDOgIILjoICAAQsQMQgwE6CAguEMcBEKMCOggIABDqAhCPAToOCC4QsQMQxwEQowIQkwI6CggAELEDELEDEApQ_7cLWPjgC2Cy4wtoBnAAeACAAa4BiAGfC5IBBDEuMTKYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwiIoJP6wv_sAhWV73MBHX6GBjsQ4dUDCAc&uact=5")
-            speak("This is the official website for Indian Premiere League")
+        elif'sports' in query:
+            webbrowser.open("https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB?hl=en-IN&gl=IN&ceid=IN:en")
+            speak("These are sports news from google news.")
         elif'exit' in query:
             speak(f"Goodbye {username}, Take care")
             print(f"Goodbye {username}, Take care")
@@ -139,7 +140,7 @@ if __name__ == "__main__":
         elif'best educational channel' in query:
             webbrowser.open("https://www.youtube.com/c/DearSir/videos")
             speak("This is the most best educational youtube channel, who teaches English and Mathematics for seondary, high secondary and students who are preparing themselves for competitive exams and also teaches us English speaking and short tricks for Maths. This channel is named as Dear Sir")
-        elif'the time' in query:
+        elif'time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Sir, the time is{strTime}")
         elif'stack overflow' in query:
@@ -175,27 +176,16 @@ if __name__ == "__main__":
         elif'best entertaining' in query: 
             webbrowser.open("https://www.sonyliv.com/")
             speak("This is the sony leave website. You can use it for watching TV shows")
-        elif'adobe reader' in query: 
-            adobePath = "C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe"
-            os.startfile(adobePath)
-            speak("starting adobe reader 9")
-        elif'search' in query:
-            speak("what should I search sir")
-            search = takeCommand()
-            chrompath = "C://Program Files//Google//Chrome//Application//chrome.exe %s"
-            speak("Ok sir")
-            webbrowser.get(chrompath).open_new_tab(search+'.com')
-            exit()
+        elif'entertainment' in query: 
+            webbrowser.open("https://www.sonyliv.com/")
+            speak("This is the sonyliv website. You can use it for watching TV shows")
         elif'national geographic'in query:
             webbrowser.open("https://www.youtube.com/c/NatGeo/videos")
             speak("This is the best scientific YouTube channel names National Geographic")
         elif'hindi news' in query:
             webbrowser.open("https://www.youtube.com/watch?v=SmQqAnKG6zs")
-            speak("This is the live news from hindi")   
-        elif'yokibu' in query:
-            webbrowser.open("https://www.yokibu.com/home")
-            speak("Starting yokibu")   
-        elif'open gmail' in query:
+            speak("This is the live news from hindi")    
+        elif'gmail' in query:
             webbrowser.open("https://mail.google.com/mail/u/0/#inbox")
             speak("Starting Google Mail")   
         elif'meet' in query:
