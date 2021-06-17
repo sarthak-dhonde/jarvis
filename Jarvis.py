@@ -152,7 +152,7 @@ if __name__ == "__main__":
         elif'am fine' in query:
             speak("Nice to hear that from you sir")
             print("Nice to hear that from you sir")
-        elif'show news in hindi' in query:
+        elif'hindi news' in query:
             webbrowser.open("https://www.youtube.com/watch?v=SmQqAnKG6zs")
             speak("This is the live news from hindi")
         elif'live news' in query:
@@ -160,10 +160,7 @@ if __name__ == "__main__":
             speak("This is the live news from Sky News in English")
         elif'marathi news' in query:
             webbrowser.open("https://www.youtube.com/watch?v=itJLgnqZ3U8")
-            speak("This is the live news from ABP maza in marathi")    
-        elif'news in marathi' in query:
-            webbrowser.open("https://www.youtube.com/watch?v=itJLgnqZ3U8")
-            speak("This is the live news from ABP maza in marathi")    
+            speak("This is the live news from ABP maza in marathi")       
         elif'amazon' in query:
             webbrowser.open("https://www.amazon.in/?ext_vrnc=hi&tag=googhydrabk-21&ascsubtag=_k_EAIaIQobChMIipy3m8iB7QIVBpZLBR3Lqwg6EAAYASAAEgJNlfD_BwE_k_&ext_vrnc=hi&gclid=EAIaIQobChMIipy3m8iB7QIVBpZLBR3Lqwg6EAAYASAAEgJNlfD_BwE")
             speak("This the shopping website named amazon")
